@@ -30,12 +30,12 @@ export class DepthManager{
 
             Object.keys(this.bids).map((bid)=>{
                 if(parseFloat(bid)>highestBid){
-                    highestBid = parseFloat(this.bids[bid]);
+                    highestBid = parseFloat(bid);
                 }
             })
             Object.keys(this.asks).map((ask)=>{
                 if(parseFloat(ask)<lowestAsk){
-                    lowestAsk = parseFloat(this.asks[ask]);
+                    lowestAsk = parseFloat(ask);
                 }
             })
             return {
